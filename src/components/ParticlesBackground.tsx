@@ -1,17 +1,20 @@
-import { useCallback } from "react";
-import Particles from "react-tsparticles";
+import { useEffect, useMemo, useState } from "react";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { loadSlim } from "@tsparticles/slim";
 
 export const ParticlesBackground = () => {
-  const particlesInit = useCallback(async (engine: any) => {
-    const { loadFull } = await import("tsparticles");
-    await loadFull(engine);
+  const [init, setInit] = useState(false);
+
+  useEffect(() => {
+    initParticlesEngine(async (engine) => {
+      await loadSlim(engine);
+    }).then(() => {
+      setInit(true);
+    });
   }, []);
 
-  return (
-    <Particles
-      id="tsparticles"
-      init={particlesInit}
-      options={{
+  const options = useMemo(
+    () => ({
         background: {
           color: {
             value: "transparent",
@@ -28,7 +31,9 @@ export const ParticlesBackground = () => {
               enable: true,
               mode: "repulse",
             },
-            resize: true,
+            resize: {
+              enable: true,
+            },
           },
           modes: {
             push: {
@@ -52,10 +57,10 @@ export const ParticlesBackground = () => {
             width: 1,
           },
           move: {
-            direction: "none",
+            direction: "none" as const,
             enable: true,
             outModes: {
-              default: "bounce",
+              default: "bounce" as const,
             },
             random: false,
             speed: 2,
@@ -79,7 +84,16 @@ export const ParticlesBackground = () => {
           },
         },
         detectRetina: true,
-      }}
+    }),
+    []
+  );
+
+  if (!init) return null;
+
+  return (
+    <Particles
+      id="tsparticles"
+      options={options}
       className="absolute inset-0 -z-10"
     />
   );
