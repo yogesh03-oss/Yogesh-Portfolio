@@ -13,7 +13,7 @@ const articles = [
   },
   {
     title: "Mastering TypeScript Generics",
-    excerpt: "Deep dive into TypeScript generics and how they can make your code more reusable and type-safe.",
+    excerpt: "Deep dive into JavaScript generics and how they can make your code more reusable and type-safe.",
     date: "2024-01-10",
     readTime: "12 min read",
     category: "TypeScript",
@@ -28,8 +28,8 @@ const articles = [
     image: "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?w=800&h=400&fit=crop"
   },
   {
-    title: "Node.js Performance Optimization",
-    excerpt: "Tips and tricks to optimize your Node.js applications for better performance and scalability.",
+    title: "Python Performance Optimization",
+    excerpt: "Tips and tricks to optimize your Python applications for better performance and scalability.",
     date: "2023-12-28",
     readTime: "10 min read",
     category: "Node.js",
@@ -109,4 +109,4 @@ const Articles = () => {
   );
 };
 
-export default Articles;
+export default Articles; 

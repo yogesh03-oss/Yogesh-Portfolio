@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "yogesh-portfolio-b1d04"
+  },
+  "targets": {
+    "yogesh-portfolio-b1d04": {
+      "hosting": {
+        "yogesh-sri": [
+          "your-firebase-site-id"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

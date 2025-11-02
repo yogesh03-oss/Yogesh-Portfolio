@@ -40,11 +40,12 @@ const Contact = () => {
           >
             <div>
               <h2 className="text-3xl font-bold mb-4 text-foreground">
-                Let's work together
+                Let's talk
               </h2>
               <p className="text-muted-foreground text-lg">
-                Have a project in mind? I'd love to hear about it. 
-                Send me a message and I'll respond as soon as possible.
+               I'm currently avaliable to talk on new projects, 
+               So feel free to send me a message about anything 
+               that you want me to work on. You can contact anytime.
               </p>
             </div>
 
@@ -58,7 +59,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Email</p>
-                  <p className="text-foreground">your.email@example.com</p>
+                  <p className="text-foreground">yogesh030204@gmail.com</p>
                 </div>
               </motion.div>
 
@@ -71,7 +72,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Phone</p>
-                  <p className="text-foreground">+1 (555) 123-4567</p>
+                  <p className="text-foreground">+91 8489200481</p>
                 </div>
               </motion.div>
 
@@ -84,7 +85,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Location</p>
-                  <p className="text-foreground">San Francisco, CA</p>
+                  <p className="text-foreground">Coddalore, IND</p>
                 </div>
               </motion.div>
             </div>

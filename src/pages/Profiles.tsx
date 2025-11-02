@@ -6,41 +6,20 @@ const profiles = [
   {
     name: "GitHub",
     icon: Github,
-    username: "@yourusername",
-    stats: "200+ repositories • 1k+ stars",
+    username: "@yogesh03-oss",
+    stats: "6+ repositories • 1k+ stars",
     description: "Open source contributions and personal projects",
     link: "https://github.com",
     color: "text-[#333333]",
     bgColor: "bg-[#333333]/10",
     borderColor: "border-[#333333]/30"
   },
-  {
-    name: "LeetCode",
-    icon: Code2,
-    username: "@yourusername",
-    stats: "500+ problems solved • Guardian rating",
-    description: "Competitive programming and algorithm practice",
-    link: "https://leetcode.com",
-    color: "text-[#FFA116]",
-    bgColor: "bg-[#FFA116]/10",
-    borderColor: "border-[#FFA116]/30"
-  },
-  {
-    name: "HackerRank",
-    icon: Trophy,
-    username: "@yourusername",
-    stats: "5 star rating • Multiple certifications",
-    description: "Problem solving and skill assessments",
-    link: "https://hackerrank.com",
-    color: "text-[#00EA64]",
-    bgColor: "bg-[#00EA64]/10",
-    borderColor: "border-[#00EA64]/30"
-  },
+
   {
     name: "SkillRack",
     icon: Code2,
-    username: "@yourusername",
-    stats: "1000+ challenges completed",
+    username: "@yogesh",
+    stats: "10+ challenges completed",
     description: "Coding challenges and programming contests",
     link: "https://skillrack.com",
     color: "text-primary",

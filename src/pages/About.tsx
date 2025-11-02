@@ -4,18 +4,18 @@ import { Award, Target, Zap } from "lucide-react";
 const achievements = [
   {
     icon: Award,
-    title: "50+ Projects Completed",
+    title: "10+ Projects Completed",
     description: "Successfully delivered diverse projects across multiple domains"
   },
   {
     icon: Target,
-    title: "5+ Years Experience",
-    description: "Expertise in modern web development technologies"
+    title: "Full-stack Devloper",
+    description: "I'am Fresher in full-stack"
   },
   {
     icon: Zap,
-    title: "99% Client Satisfaction",
-    description: "Committed to excellence and quality delivery"
+    title: "Web Design",
+    description: "I'am create a Figma Tools"
   }
 ];
 
@@ -44,21 +44,19 @@ const About = () => {
             transition={{ delay: 0.2 }}
           >
             <p>
-              I'm a passionate full-stack developer with a keen eye for design and a love for creating 
-              exceptional digital experiences. My journey in tech began several years ago, and since then, 
-              I've been constantly learning and evolving with the industry.
+              I am an freshered Frontend Developer with over a decade 
+              of professional expertise in the field. Throughout my career, 
+              I have had the privilege of collaborating with prestigious organizations, 
+              contributing to their success and growth.
             </p>
             
             <p>
-              I specialize in React, Node.js, and modern web technologies, building scalable applications 
-              that not only look great but perform exceptionally. I believe in writing clean, maintainable 
-              code and following best practices to deliver high-quality solutions.
+              My passion for frontend development is not only reflected in my extensive
+               experience but also in the enthusiasm and dedication I bring to 
+               each project.
             </p>
 
-            <p>
-              When I'm not coding, you'll find me exploring new technologies, contributing to open-source 
-              projects, or sharing my knowledge through technical articles and tutorials.
-            </p>
+            
           </motion.div>
 
           <motion.div

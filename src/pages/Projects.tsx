@@ -5,50 +5,43 @@ import { Button } from "@/components/ui/button";
 const projects = [
   {
     title: "E-Commerce Platform",
-    description: "A full-stack e-commerce solution with React, Node.js, and MongoDB",
+    description: "A full-stack e-commerce solution with React, Python, and MongoDB",
     image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop",
-    tags: ["React", "Node.js", "MongoDB", "Stripe"],
+    tags: ["React","Javascript", "Python", "MongoDB", ],
     github: "https://github.com",
     demo: "https://demo.com"
   },
   {
-    title: "Social Media Dashboard",
-    description: "Real-time analytics dashboard for social media management",
+    title: " Dashboard",
+    description: "Real-time analytics dashboard for Company management",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-    tags: ["React", "TypeScript", "Firebase", "Chart.js"],
-    github: "https://github.com",
+    tags: ["React", "Javascript", "Css", "jQuery"],
+    github: "https://github.com/yogesh03-oss/Main-Project",
     demo: "https://demo.com"
   },
+
   {
-    title: "AI Content Generator",
-    description: "AI-powered content creation tool using OpenAI API",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop",
-    tags: ["Next.js", "OpenAI", "TailwindCSS", "Prisma"],
-    github: "https://github.com",
-    demo: "https://demo.com"
-  },
-  {
-    title: "Task Management App",
-    description: "Collaborative project management tool with real-time updates",
+    title: "My College Project",
+    description: "Create to My College Project",
     image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
-    tags: ["React", "Socket.io", "Express", "PostgreSQL"],
-    github: "https://github.com",
+    tags: ["React", "Javascript", "Css", ],
+    github: "https://github.com/yogesh03-oss/oasys",
     demo: "https://demo.com"
   },
   {
-    title: "Fitness Tracking App",
-    description: "Mobile-first fitness tracker with workout plans and nutrition guides",
+    title: "Youtube-Clone",
+    description: "I'am Recreate a Youtube clone",
     image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=600&fit=crop",
-    tags: ["React Native", "Redux", "Node.js", "MongoDB"],
-    github: "https://github.com",
+    tags: ["React JS", "css", "JavaScript", "API",],
+    github: "https://github.com/yogesh03-oss/Youtube-clone",
     demo: "https://demo.com"
   },
   {
-    title: "Real Estate Platform",
-    description: "Property listing and management system with advanced search",
+    title: "Gemini-Clone",
+    description: "I'am Recreate a Gemini-Clone",
     image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
-    tags: ["Vue.js", "Laravel", "MySQL", "Google Maps API"],
-    github: "https://github.com",
+    tags: ["React JS", "css", "JavaScript","API",],
+    github: "https://github.com/yogesh03-oss/Gemeni-clone",
     demo: "https://demo.com"
   }
 ];

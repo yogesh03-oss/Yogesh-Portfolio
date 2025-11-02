@@ -1,0 +1,142 @@
+mutation SeedDatabase @auth(level: PUBLIC, insecureReason: "This mutation is for seeding data and is safe to expose to the public") {
+  user_insertMany(data: [
+    {
+      id: "550e8400-e29b-41d4-a716-446655440000",
+      bio: "A passionate developer",
+      contactEmail: "test@example.com",
+      createdAt: "2024-01-01T00:00:00Z",
+      email: "test@example.com",
+      firstName: "Test",
+      githubUrl: "https://github.com/test",
+      lastName: "User",
+      linkedinUrl: "https://linkedin.com/in/test",
+      profilePictureUrl: "https://example.com/image.jpg",
+      publicPortfolio: true,
+      username: "testuser"
+    },
+    {
+      id: "660f9511-f3ac-52e5-b827-557766551111",
+      bio: "A creative designer",
+      contactEmail: "sample@example.com",
+      createdAt: "2024-02-15T12:00:00Z",
+      email: "sample@example.com",
+      firstName: "Sample",
+      githubUrl: "https://github.com/sample",
+      lastName: "User",
+      linkedinUrl: "https://linkedin.com/in/sample",
+      profilePictureUrl: "https://example.com/sample.jpg",
+      publicPortfolio: false,
+      username: "sampleuser"
+    }
+  ])
+  skill_insertMany(data: [
+    {
+      id: "770a0622-04bb-63f6-c938-668877662222",
+      userId: "550e8400-e29b-41d4-a716-446655440000",
+      name: "JavaScript",
+      proficiency: "Expert"
+    },
+    {
+      id: "880b1733-15cc-74d7-da49-779988773333",
+      userId: "550e8400-e29b-41d4-a716-446655440000",
+      name: "React",
+      proficiency: "Advanced"
+    },
+    {
+      id: "990c2844-26dd-85e8-eb5a-881199884444",
+      userId: "660f9511-f3ac-52e5-b827-557766551111",
+      name: "UI Design",
+      proficiency: "Expert"
+    },
+    {
+      id: "aa0d3955-37ee-96f9-fc6b-9922aa995555",
+      userId: "660f9511-f3ac-52e5-b827-557766551111",
+      name: "UX Design",
+      proficiency: "Advanced"
+    }
+  ])
+  project_insertMany(data: [
+    {
+      id: "bb0e4a66-48ff-070a-0d7c-0033bb006666",
+      userId: "550e8400-e29b-41d4-a716-446655440000",
+      coverImageUrl: "https://example.com/project1.jpg",
+      createdAt: "2024-03-01T00:00:00Z",
+      description: "A web application",
+      displayOrder: 1,
+      projectUrl: "https://example.com/project1",
+      repositoryUrl: "https://github.com/test/project1",
+      title: "Project 1"
+    },
+    {
+      id: "cc0f5b77-59aa-181b-1e8d-1144cc117777",
+      userId: "660f9511-f3ac-52e5-b827-557766551111",
+      coverImageUrl: "https://example.com/project2.jpg",
+      createdAt: "2024-04-01T00:00:00Z",
+      description: "A mobile application",
+      displayOrder: 2,
+      projectUrl: "https://example.com/project2",
+      repositoryUrl: "https://github.com/sample/project2",
+      title: "Project 2"
+    }
+  ])
+  projectAsset_insertMany(data: [
+    {
+      id: "dd1a6c88-6abb-292c-2f9e-2255dd228888",
+      projectId: "bb0e4a66-48ff-070a-0d7c-0033bb006666",
+      assetType: "image",
+      assetUrl: "https://example.com/asset1.jpg",
+      caption: "Screenshot 1",
+      displayOrder: 1
+    },
+    {
+      id: "ee1b7d99-7bcc-3a3d-30af-3366ee339999",
+      projectId: "cc0f5b77-59aa-181b-1e8d-1144cc117777",
+      assetType: "video",
+      assetUrl: "https://example.com/asset2.mp4",
+      caption: "Demo video",
+      displayOrder: 2
+    }
+  ])
+  education_insertMany(data: [
+    {
+      id: "ff1c8e00-8cdd-4b4e-41bf-4477ff440000",
+      userId: "550e8400-e29b-41d4-a716-446655440000",
+      degree: "BSc Computer Science",
+      description: "Relevant coursework",
+      fieldOfStudy: "Computer Science",
+      graduationYear: 2020,
+      institution: "University of Example"
+    },
+    {
+      id: "002d9f11-9dde-5c5f-52ca-558800551111",
+      userId: "660f9511-f3ac-52e5-b827-557766551111",
+      degree: "MSc Design",
+      description: "Specialized in UX",
+      fieldOfStudy: "Design",
+      graduationYear: 2022,
+      institution: "Design Institute"
+    }
+  ])
+  experience_insertMany(data: [
+    {
+      id: "112e0a22-0ee1-6d60-63db-669911662222",
+      userId: "550e8400-e29b-41d4-a716-446655440000",
+      company: "Tech Company A",
+      description: "Developed web apps",
+      endDate: "2023-12-31",
+      isCurrent: false,
+      startDate: "2021-01-01",
+      title: "Software Engineer"
+    },
+    {
+      id: "222f1b33-1ff2-7e71-74ec-77aa22773333",
+      userId: "660f9511-f3ac-52e5-b827-557766551111",
+      company: "Design Studio B",
+      description: "Designed user interfaces",
+      endDate: null,
+      isCurrent: true,
+      startDate: "2022-06-01",
+      title: "UX Designer"
+    }
+  ])
+}

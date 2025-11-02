@@ -2,9 +2,15 @@ import { motion } from "framer-motion";
 import { ParticlesBackground } from "@/components/ParticlesBackground";
 import { Scene3D } from "@/components/Scene3D";
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Download, Mail } from "lucide-react";
+import { ArrowDown, Contact, Download, Mail } from "lucide-react";
 import { SocialLinks } from "@/components/SocialLinks";
 import { Link } from "react-router-dom";
+import profile from "../assets/yogesh.png"
+import About from "./About";
+import Projects from "./Projects";
+import Skills from "./Skills";
+import Resume from "./Resume";
+import Profiles from "./Profiles";
 
 const Hero = () => {
   return (
@@ -26,10 +32,15 @@ const Hero = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 }}
               >
-                Hi, I'm{" "}
+
+                <h1>  Hi, I'm{"  Fullstack dev "}
                 <span className="gradient-text animate-glow">
-                  Your Name
+                  Yogeshwaran
                 </span>
+                </h1>
+                   
+            
+                
               </motion.h1>
               
               <motion.p
@@ -47,8 +58,8 @@ const Hero = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6 }}
               >
-                Crafting beautiful, performant web experiences with modern technologies.
-                Passionate about creating seamless user interfaces and robust backend solutions.
+                I'm a fresher FullStack developer and student, 
+                Starting my coding journey—building small projects and sharing my progress!
               </motion.p>
             </motion.div>
 
@@ -115,6 +126,16 @@ const Hero = () => {
       {/* Animated Background Blurs */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float" />
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-float" style={{ animationDelay: "2s" }} />
+    
+    
+       <About />
+       <Projects/>
+       <Skills />
+       <Contact />
+       <Resume />
+       <Profiles />
+
+
     </div>
   );
 };

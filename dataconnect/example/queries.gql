@@ -1,0 +1,27 @@
+mutation CreateUser @auth(level: USER) {
+  user_insert(data: {
+    username: "exampleUser",
+    email: "example@email.com",
+    createdAt_expr: "request.time"
+  })
+}
+
+query ListProjects @auth(level: PUBLIC, insecureReason: "This operation is safe to expose to the public") {
+  projects {
+    id
+    title
+    description
+  }
+}
+
+mutation UpdateProject($id: UUID!, $description: String) @auth(level: USER) {
+  project_update(key: {id: $id}, data: {description: $description})
+}
+
+query GetSkillsForUser @auth(level: USER) {
+  skills(where: {userId: {eq_expr: "auth.uid"}}) {
+    id
+    name
+    proficiency
+  }
+}

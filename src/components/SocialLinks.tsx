@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import { Github, Linkedin, Instagram, Youtube, Twitter } from "lucide-react";
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com", label: "GitHub", color: "hover:text-primary" },
+  { icon: Github, href: "https://github.com/yogesh03-oss", label: "GitHub", color: "hover:text-primary" },
   { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn", color: "hover:text-[#0077b5]" },
-  { icon: Instagram, href: "https://instagram.com", label: "Instagram", color: "hover:text-accent" },
+  { icon: Instagram, href: "https://www.instagram.com/____mr___joy___?igsh=MWF3dTZkaWIwOG9pYg==", label: "Instagram", color: "hover:text-accent" },
   { icon: Youtube, href: "https://youtube.com", label: "YouTube", color: "hover:text-[#ff0000]" },
   { icon: Twitter, href: "https://twitter.com", label: "Twitter", color: "hover:text-[#1da1f2]" },
 ];
