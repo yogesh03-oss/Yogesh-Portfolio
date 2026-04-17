@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Download, FileText } from "lucide-react";
-import resumeImage from "../../src/assets/Resume.jpg"; //  Your resume image file
+import resumeImage from "../../src/assets/Yogeshwaran-R.pdf"; //  Your resume image file
 
 const Resume = () => {
 
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = resumeImage;
-    link.download = "Resume.jpg"; //  Downloaded file name
+    link.download = "Yogeshwaran-R.pdf"; //  Downloaded file name
     link.click();
   };
 
@@ -105,6 +105,7 @@ const Resume = () => {
                 <ul className="space-y-2 text-muted-foreground">
                   <li>• I'am Freasher in web development</li>
                   <li>• Freasher in a Figma</li>
+                  <li>• Freelancher</li>
                 </ul>
               </div>
 
@@ -120,9 +121,10 @@ const Resume = () => {
               <div>
                 <h3 className="text-lg font-semibold mb-2 text-foreground">Skills</h3>
                 <ul className="space-y-2 text-muted-foreground">
-                  <li>• React, JavaScript, Python</li>
-                  <li>• Cloud platforms (AWS)</li>
+                  <li>• React, JavaScript</li>
+                  <li>• node js, Express js</li> 
                   <li>• MongoDb</li>
+                  <li>• Cloud platforms (AWS)</li>
                 </ul>
               </div>
 
@@ -130,7 +132,10 @@ const Resume = () => {
                 <h3 className="text-lg font-semibold mb-2 text-foreground">Achievements</h3>
                 <ul className="space-y-2 text-muted-foreground">
                   <li>• 10+ successful projects</li>
+                  <li>• HTML Cetrificate</li>
                   <li>• JavaScript Cetrificate</li>
+                  <li>• MongoDB Cetrificate</li>
+                  <li>• Web development workshop Cetrificate</li>
                   <li>• MongoDB finish Cetrificate</li>
                 </ul>
               </div>

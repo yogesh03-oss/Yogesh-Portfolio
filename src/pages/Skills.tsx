@@ -5,29 +5,28 @@ const skillCategories = [
   {
     category: "Frontend",
     skills: [
-      { name: "React", level: 75 },
-      { name: "JavaScript", level: 60 },
       { name: "HTML", level: 85 },
       { name: "css", level: 75 },
-      { name: "TailwindCSS", level: 65 },
+      { name: "React", level: 75 },
+      { name: "JavaScript", level: 70 },
+      { name: "TailwindCSS", level: 70},
     ]
   },
   {
     category: "Backend",
     skills: [
-      { name: "Pyhton", level: 70 },
-      { name: "Django", level: 75 },
-      { name: "SQL", level: 50 },
-      { name: "MongoDB", level: 64 },
+      { name: "node js", level: 65 },
+      { name: "Express.js", level: 65 },
+      { name: "MongoDB", level: 70 },
       
     ]
   },
   {
     category: "Tools & Others",
     skills: [
-      { name: "Git", level: 90 },
-      { name: "Figma", level: 75 },
-      { name: "AWS", level: 70 },
+      { name: "Git", level: 87 },
+      { name: "Figma", level: 70 },
+      { name: "AWS", level: 60 },
       { name: "Canva", level: 85 },
     ]
   }

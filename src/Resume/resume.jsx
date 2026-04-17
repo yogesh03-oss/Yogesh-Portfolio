@@ -1,16 +1,14 @@
 import { useEffect, useState } from "react";
-import resume from "../../assets/Resume.jpg";
-import "./Resume.css"
-
+import resume from "../../assets/Yogeshwaran-R.pdf";   // <-- PDF file
+import "./Resume.css";
 
 const DownloadTimer = () => {
-  const [timer, setTimer] = useState(5); // countdown seconds
+  const [timer, setTimer] = useState(5);
   const [isDownloading, setIsDownloading] = useState(false);
   const [isCompleted, setIsCompleted] = useState(false);
 
-  //  use imported image
+  // Use imported PDF file
   const fileLink = resume;
-
 
   useEffect(() => {
     let countdown;
@@ -34,26 +32,27 @@ const DownloadTimer = () => {
   };
 
   const handleDownload = () => {
-    //  Create a temporary link element to trigger download
+    // Create a temporary link element to trigger download
     const link = document.createElement("a");
     link.href = fileLink;
-    link.download = "Resume.jpg";
+    link.download = "Yogeshwaran-R.pdf";   // <-- PDF filename
     link.click();
 
     setIsDownloading(false);
 
-    // After a delay, show "Download Again"
+    // Show "Download Again" after a delay
     setTimeout(() => {
       setIsCompleted(true);
     }, 3000);
   };
 
-  //  return the JSX directly (no nested components)
   return (
     <div>
-        <div className="resume-dow">
-            <img src={resume} alt="" />
-        </div>
+      <div className="resume-dow">
+        {/* Optional: If you want to show PDF preview as image, remove this or replace with an icon */}
+        <embed src={resume} type="application/pdf" width="100%" height="400px" />
+      </div>
+
       {!isDownloading && !isCompleted && (
         <button onClick={startDownload} className="timer-btn">
           Start Download
@@ -62,7 +61,7 @@ const DownloadTimer = () => {
 
       {isDownloading && (
         <button disabled className="downloading-btn">
-          Your download will begin in <br /> {timer} seconds
+          Your PDF download will begin in <br /> {timer} seconds
         </button>
       )}
 
@@ -73,6 +72,6 @@ const DownloadTimer = () => {
       )}
     </div>
   );
-}
+};
 
-export default  DownloadTimer;
+export default DownloadTimer;

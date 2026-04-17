@@ -4,15 +4,11 @@
       "dataDir": "dataconnect/.dataconnect/pgliteData"
     }
   },
-
-  
-
   "dataconnect": {
     "source": "dataconnect"
   },
   "hosting": {
-    "site": "yogesh-sri",
-    "public": "dist",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -23,9 +19,6 @@
         "source": "**",
         "destination": "/index.html"
       }
-      
     ]
   }
-
-  
 }

@@ -3,14 +3,17 @@ import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const projects = [
+ 
+  
   {
-    title: "E-Commerce Platform",
-    description: "A full-stack e-commerce solution with React, Python, and MongoDB",
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop",
-    tags: ["React","Javascript", "Python", "MongoDB", ],
-    github: "https://github.com",
+    title: "LMS Project",
+    description: "Learning Management System for educational institutions",
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
+    tags: ["React", "Javascript", "Css", ],
+    github: "https://github.com/yogesh03-oss/LMS.git",
     demo: "https://demo.com"
-  },
+  }, 
+  
   {
     title: " Dashboard",
     description: "Real-time analytics dashboard for Company management",
@@ -21,29 +24,29 @@ const projects = [
   },
 
   {
-    title: "My College Project",
-    description: "Create to My College Project",
-    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
-    tags: ["React", "Javascript", "Css", ],
-    github: "https://github.com/yogesh03-oss/oasys",
-    demo: "https://demo.com"
-  },
-  {
-    title: "Youtube-Clone",
-    description: "I'am Recreate a Youtube clone",
+    title: "Hospitel Resorce Management System",
+    description: "A resource management system for hospitals to optimize staff and equipment allocation",
     image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=600&fit=crop",
-    tags: ["React JS", "css", "JavaScript", "API",],
+    tags: ["React", "Node.js" , "Express.js", "MongoDB"],
     github: "https://github.com/yogesh03-oss/Youtube-clone",
     demo: "https://demo.com"
   },
   {
-    title: "Gemini-Clone",
-    description: "I'am Recreate a Gemini-Clone",
+    title: "Smart Life Safty System",
+    description: "I'am create a Smart Life Safty System with React JS and Node.js",
     image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
-    tags: ["React JS", "css", "JavaScript","API",],
+    tags: ["React JS", "Node.js","Express.js", "MongoDB"],
     github: "https://github.com/yogesh03-oss/Gemeni-clone",
     demo: "https://demo.com"
-  }
+  },
+   {
+    title: "E-Commerce Platform",
+    description: "A full-stack e-commerce solution with React, Python, and MongoDB",
+    image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop",
+    tags: ["React","Javascript", "Node.js", "Express.js", "MongoDB", ],
+    github: "https://github.com",
+    demo: "https://demo.com"
+  },
 ];
 
 const Projects = () => {

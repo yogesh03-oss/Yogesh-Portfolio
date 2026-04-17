@@ -14,8 +14,8 @@ const achievements = [
   },
   {
     icon: Zap,
-    title: "Web Design",
-    description: "I'am create a Figma Tools"
+    title: "Freelancer",
+    description: "I'am Freelancer in Upwork and Fiverr"
   }
 ];
 
